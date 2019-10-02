@@ -1,0 +1,144 @@
+clayton.chagas@36DE194600 MINGW64 ~
+$ ls
+'3D Objects'/             ntuser.dat.LOG1
+ AppData/                 ntuser.dat.LOG2
+'Application Data'@       NTUSER.DAT{1c3790b4-b8ad-11e8-aa21-e41d2d101530}.TM.blf
+ Contacts/                NTUSER.DAT{1c3790b4-b8ad-11e8-aa21-e41d2d101530}.TMContainer00000000000000000001.regtrans-ms
+ Cookies@                 NTUSER.DAT{1c3790b4-b8ad-11e8-aa21-e41d2d101530}.TMContainer00000000000000000002.regtrans-ms
+ Desktop/                 ntuser.ini
+ Documents/               OneDrive/
+ Downloads/               Pictures/
+ Favorites/               PrintHood@
+ IntelGraphicsProfiles/   Recent@
+ Links/                  'Saved Games'/
+'Local Settings'@         Searches/
+ Music/                   SendTo@
+'My Documents'@          'Start Menu'@
+ NetHood@                 Templates@
+ NTUSER.DAT               Videos/
+
+clayton.chagas@36DE194600 MINGW64 ~
+$ ls-a
+bash: ls-a: command not found
+
+clayton.chagas@36DE194600 MINGW64 ~
+$ cd Documents/
+
+clayton.chagas@36DE194600 MINGW64 ~/Documents
+$
+
+clayton.chagas@36DE194600 MINGW64 ~/Documents
+$ ls
+ datapython/   desktop.ini  'My Music'@  'My Pictures'@  'My Videos'@
+
+clayton.chagas@36DE194600 MINGW64 ~/Documents
+$ cd datapython/
+
+clayton.chagas@36DE194600 MINGW64 ~/Documents/datapython
+$ ls -a
+./  ../
+
+clayton.chagas@36DE194600 MINGW64 ~/Documents/datapython
+$ git init
+Initialized empty Git repository in C:/Users/clayton.chagas/Documents/datapython/.git/
+
+clayton.chagas@36DE194600 MINGW64 ~/Documents/datapython (master)
+$ ls -a
+./  ../  .git/
+
+clayton.chagas@36DE194600 MINGW64 ~/Documents/datapython (master)
+$ ls
+
+clayton.chagas@36DE194600 MINGW64 ~/Documents/datapython (master)
+$ git remote add origin https://github.com/vitorfmferreira/datapython.git
+
+clayton.chagas@36DE194600 MINGW64 ~/Documents/datapython (master)
+$ git pull origin master
+fatal: Couldn't find remote ref master
+
+clayton.chagas@36DE194600 MINGW64 ~/Documents/datapython (master)
+$ git add .
+
+clayton.chagas@36DE194600 MINGW64 ~/Documents/datapython (master)
+$ git commit -m "primeiro commit"
+[master (root-commit) b42d421] primeiro commit
+ Committer: Clayton Chagas <Clayton.Chagas@senacrjedu.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 teste.txt.txt
+
+clayton.chagas@36DE194600 MINGW64 ~/Documents/datapython (master)
+$ git commit -m "primeiro commit"
+On branch master
+Changes not staged for commit:
+        deleted:    teste.txt.txt
+
+Untracked files:
+        teste.txt
+
+no changes added to commit
+
+clayton.chagas@36DE194600 MINGW64 ~/Documents/datapython (master)
+$ git add .
+
+clayton.chagas@36DE194600 MINGW64 ~/Documents/datapython (master)
+$ git commit -m "primeiro commit"
+[master b62a9d0] primeiro commit
+ Committer: Clayton Chagas <Clayton.Chagas@senacrjedu.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename teste.txt.txt => teste.txt (100%)
+
+clayton.chagas@36DE194600 MINGW64 ~/Documents/datapython (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 395 bytes | 395.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/vitorfmferreira/datapython.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+clayton.chagas@36DE194600 MINGW64 ~/Documents/datapython (master)
+$ git pull origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/vitorfmferreira/datapython
+ * branch            master     -> FETCH_HEAD
+   b62a9d0..f7c9736  master     -> origin/master
+Updating b62a9d0..f7c9736
+Fast-forward
+ teste.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+clayton.chagas@36DE194600 MINGW64 ~/Documents/datapython (master)
+$
+
+
